@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5098c223ccafdbfb94e852fd8acaf292",
+    "revision": "28953a9530c3c7744e5e8587cccceb81",
     "url": "/trollify/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/trollify/static/css/2.31dafeb2.chunk.css"
   },
   {
-    "revision": "9571d8697c513fb04e27",
+    "revision": "e2ca52397e947877372e",
     "url": "/trollify/static/css/main.8e6a3f60.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/trollify/static/js/2.5b03823b.chunk.js"
   },
   {
-    "revision": "9571d8697c513fb04e27",
-    "url": "/trollify/static/js/main.9b2a5bdf.chunk.js"
+    "revision": "e2ca52397e947877372e",
+    "url": "/trollify/static/js/main.b74b1e98.chunk.js"
   },
   {
     "revision": "0c0d23111b55cd453b93",

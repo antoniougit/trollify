@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.0/workbox-sw.js");
 
 importScripts(
-  "/trollify/precache-manifest.7ffbe68af70d7ad8991bce028100a5ab.js"
+  "/trollify/precache-manifest.b3496b1f590d96b9f087cef35b8e2483.js"
 );
 
 self.addEventListener('message', (event) => {

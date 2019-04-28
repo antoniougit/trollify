@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/trollify/static/css/main.8e6a3f60.chunk.css",
-    "main.js": "/trollify/static/js/main.cfeb49e2.chunk.js",
-    "main.js.map": "/trollify/static/js/main.cfeb49e2.chunk.js.map",
+    "main.css": "/trollify/static/css/main.1f9dfca7.chunk.css",
+    "main.js": "/trollify/static/js/main.60c557d4.chunk.js",
+    "main.js.map": "/trollify/static/js/main.60c557d4.chunk.js.map",
     "runtime~main.js": "/trollify/static/js/runtime~main.3d23252b.js",
     "runtime~main.js.map": "/trollify/static/js/runtime~main.3d23252b.js.map",
     "static/css/2.31dafeb2.chunk.css": "/trollify/static/css/2.31dafeb2.chunk.css",
     "static/js/2.5b03823b.chunk.js": "/trollify/static/js/2.5b03823b.chunk.js",
     "static/js/2.5b03823b.chunk.js.map": "/trollify/static/js/2.5b03823b.chunk.js.map",
     "index.html": "/trollify/index.html",
-    "precache-manifest.738db254ad69b2531e6d7d501d588c73.js": "/trollify/precache-manifest.738db254ad69b2531e6d7d501d588c73.js",
+    "precache-manifest.717502cda6a1c8a639825f09ef2a751c.js": "/trollify/precache-manifest.717502cda6a1c8a639825f09ef2a751c.js",
     "service-worker.js": "/trollify/service-worker.js",
     "static/css/2.31dafeb2.chunk.css.map": "/trollify/static/css/2.31dafeb2.chunk.css.map",
-    "static/css/main.8e6a3f60.chunk.css.map": "/trollify/static/css/main.8e6a3f60.chunk.css.map",
+    "static/css/main.1f9dfca7.chunk.css.map": "/trollify/static/css/main.1f9dfca7.chunk.css.map",
     "static/media/logo.png": "/trollify/static/media/logo.bd866bc7.png",
     "static/media/FaceRecognition.css": "/trollify/static/media/trollface.8cc7beff.png"
   }

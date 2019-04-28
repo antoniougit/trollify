@@ -56,17 +56,17 @@ class App extends Component {
   }
 
   displayFaceBox = (boxes) => {
-    this.setState({boxes});
+    this.setState({ boxes });
   }
 
   onInputChange = (event) => {
-    this.setState({input: event.target.value});
+    this.setState({ input: event.target.value });
   }
 
   onButtonSubmit = () => {
     const imgUrl = /(http[s]?:\/\/.*.(?:png|jpg|gif|svg|jpeg|webp))/i;
     if (imgUrl.test(this.state.input)) {
-      this.setState({imageUrl: this.state.input});
+      this.setState({ imageUrl: this.state.input });
       fetch('https://trollify-server.herokuapp.com/imageurl', {
         method: 'post',
         headers: {'Content-Type': 'application/json'},
@@ -100,33 +100,33 @@ class App extends Component {
     if (route === 'signout') {
       this.setState(initialState)
     } else if (route === 'home') {
-      this.setState({isSignedIn: true})
+      this.setState({ isSignedIn: true })
     }
-    this.setState({route});
+    this.setState({ route });
   }
 
   render() {
     const { isSignedIn, imageUrl, route, boxes } = this.state;
     return (
       <div className="App">
-        <Navigation isSignedIn={isSignedIn} onRouteChange={this.onRouteChange} />
+        <Navigation isSignedIn={ isSignedIn } onRouteChange={ this.onRouteChange } />
         { route === 'home'
           ? <div>
               <Logo />
               <Rank
-                name={this.state.user.name}
-                entries={this.state.user.entries}
+                name={ this.state.user.name }
+                entries={ this.state.user.entries }
               />
               <ImageLinkForm
-                onInputChange={this.onInputChange}
-                onButtonSubmit={this.onButtonSubmit}
+                onInputChange={ this.onInputChange }
+                onButtonSubmit={ this.onButtonSubmit }
               />
-              <FaceRecognition boxes={boxes} imageUrl={imageUrl} />
+              <FaceRecognition boxes={boxes} imageUrl={ imageUrl } />
             </div>
           : (
             (route === 'signin' || route === 'signout')
-             ? <SignIn loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
-             : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
+             ? <SignIn loadUser={ this.loadUser } onRouteChange={ this.onRouteChange }/>
+             : <Register loadUser={ this.loadUser } onRouteChange={this.onRouteChange }/>
             )
         }
       </div>

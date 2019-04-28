@@ -11,15 +11,15 @@ class Register extends React.Component {
   }
 
   onNameChange = (event) => {
-    this.setState({name: event.target.value})
+    this.setState({ name: event.target.value })
   }
 
   onEmailChange = (event) => {
-    this.setState({email: event.target.value})
+    this.setState({ email: event.target.value })
   }
 
   onPasswordChange = (event) => {
-    this.setState({password: event.target.value})
+    this.setState({ password: event.target.value })
   }
 
   onSubmitSignIn = () => {
@@ -56,7 +56,7 @@ class Register extends React.Component {
                   type="text"
                   name="name"
                   id="name"
-                  onChange={this.onNameChange}
+                  onChange={ this.onNameChange }
                 />
               </div>
               <div className="mt3">
@@ -66,7 +66,7 @@ class Register extends React.Component {
                   type="email"
                   name="email-address"
                   id="email-address"
-                  onChange={this.onEmailChange}
+                  onChange={ this.onEmailChange }
                 />
               </div>
               <div className="mv3">
@@ -76,13 +76,13 @@ class Register extends React.Component {
                   type="password"
                   name="password"
                   id="password"
-                  onChange={this.onPasswordChange}
+                  onChange={ this.onPasswordChange }
                 />
               </div>
             </fieldset>
             <div className="">
               <input
-                onClick={this.onSubmitSignIn}
+                onClick={ this.onSubmitSignIn }
                 className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
                 type="submit"
                 value="Register"

@@ -56,6 +56,7 @@ class Register extends React.Component {
                   type="text"
                   name="name"
                   id="name"
+                  required
                   onChange={ this.onNameChange }
                 />
               </div>
@@ -66,6 +67,8 @@ class Register extends React.Component {
                   type="email"
                   name="email-address"
                   id="email-address"
+                  pattern="[a-zA-Z0-9!#$%&amp;'*+\/=?^_`{|}~.-]+@[a-zA-Z0-9-]+(\.[a-zA-Z0-9-]+)*"
+                  required
                   onChange={ this.onEmailChange }
                 />
               </div>
@@ -76,6 +79,7 @@ class Register extends React.Component {
                   type="password"
                   name="password"
                   id="password"
+                  required
                   onChange={ this.onPasswordChange }
                 />
               </div>

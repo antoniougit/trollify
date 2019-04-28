@@ -4,7 +4,10 @@ const Rank = ({ name, entries }) => {
   return (
     <div>
       <div className='white f3'>
-        {`${name}, you have already trollified `}<span className="f1">{`${entries}`}</span>{` images!`}
+        {`${name}, you have trollified `}<span className="f1">{`${entries}`}</span>
+        {
+          (entries === '1') ? ' image!' : ' images!'
+        }
       </div>
     </div>
   );

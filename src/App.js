@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
 import Navigation from './components/Navigation/Navigation';
-import Signin from './components/Signin/Signin';
+import SignIn from './components/SignIn/SignIn';
 import Register from './components/Register/Register';
 import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
@@ -74,34 +74,37 @@ class App extends Component {
   }
 
   onButtonSubmit = () => {
-    this.setState({imageUrl: this.state.input});
-    fetch('https://trollify-server.herokuapp.com/imageurl', {
-      method: 'post',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify({
-        input: this.state.input
+    const imgUrl = /(http[s]?:\/\/.*.(?:png|jpg|gif|svg|jpeg))/i;
+    if (imgUrl.test(this.state.input)) {
+      this.setState({imageUrl: this.state.input});
+      fetch('https://trollify-server.herokuapp.com/imageurl', {
+        method: 'post',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          input: this.state.input
+        })
       })
-    })
-    .then(response => response.json())
-    .then(response => {
-      if (response) {
-        fetch('https://trollify-server.herokuapp.com/image', {
-          method: 'put',
-          headers: {'Content-Type': 'application/json'},
-          body: JSON.stringify({
-            id: this.state.user.id
+      .then(response => response.json())
+      .then(response => {
+        if (response) {
+          fetch('https://trollify-server.herokuapp.com/image', {
+            method: 'put',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+              id: this.state.user.id
+            })
           })
-        })
-        .then(response => response.json())
-        .then(count => {
-          this.setState(Object.assign(this.state.user, { entries: count}))
-        })
-        .catch((console.log));
-      }
-      this.displayFaceBox(this.calculateFaceLocation(response))
-    })
-    .catch(err => console.log(err));
-  }
+          .then(response => response.json())
+          .then(count => {
+            this.setState(Object.assign(this.state.user, { entries: count}))
+          })
+          .catch((console.log));
+        }
+        this.displayFaceBox(this.calculateFaceLocation(response))
+      })
+      .catch(err => console.log(err));
+    }
+  };
 
   onRouteChange = (route) => {
     if (route === 'signout') {
@@ -132,7 +135,7 @@ class App extends Component {
             </div>
           : (
             (route === 'signin' || route === 'signout')
-             ? <Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
+             ? <SignIn loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
              : <Register loadUser={this.loadUser} onRouteChange={this.onRouteChange}/>
             )
         }

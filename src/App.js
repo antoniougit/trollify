@@ -74,7 +74,7 @@ class App extends Component {
   }
 
   onButtonSubmit = () => {
-    const imgUrl = /(http[s]?:\/\/.*.(?:png|jpg|gif|svg|jpeg))/i;
+    const imgUrl = /(http[s]?:\/\/.*)/i;
     if (imgUrl.test(this.state.input)) {
       this.setState({imageUrl: this.state.input});
       fetch('https://trollify-server.herokuapp.com/imageurl', {

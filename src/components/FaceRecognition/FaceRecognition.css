@@ -1,0 +1,10 @@
+.bounding-box {
+  background-image: url(trollface.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}

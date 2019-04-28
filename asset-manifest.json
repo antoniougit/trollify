@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/trollify/static/css/main.8e6a3f60.chunk.css",
-    "main.js": "/trollify/static/js/main.172fb0b0.chunk.js",
-    "main.js.map": "/trollify/static/js/main.172fb0b0.chunk.js.map",
+    "main.js": "/trollify/static/js/main.bd97bd84.chunk.js",
+    "main.js.map": "/trollify/static/js/main.bd97bd84.chunk.js.map",
     "runtime~main.js": "/trollify/static/js/runtime~main.3d23252b.js",
     "runtime~main.js.map": "/trollify/static/js/runtime~main.3d23252b.js.map",
     "static/css/2.31dafeb2.chunk.css": "/trollify/static/css/2.31dafeb2.chunk.css",
     "static/js/2.5b03823b.chunk.js": "/trollify/static/js/2.5b03823b.chunk.js",
     "static/js/2.5b03823b.chunk.js.map": "/trollify/static/js/2.5b03823b.chunk.js.map",
     "index.html": "/trollify/index.html",
-    "precache-manifest.b3496b1f590d96b9f087cef35b8e2483.js": "/trollify/precache-manifest.b3496b1f590d96b9f087cef35b8e2483.js",
+    "precache-manifest.afdd830474e0dbd4ab6bdc6a5c8138f1.js": "/trollify/precache-manifest.afdd830474e0dbd4ab6bdc6a5c8138f1.js",
     "service-worker.js": "/trollify/service-worker.js",
     "static/css/2.31dafeb2.chunk.css.map": "/trollify/static/css/2.31dafeb2.chunk.css.map",
     "static/css/main.8e6a3f60.chunk.css.map": "/trollify/static/css/main.8e6a3f60.chunk.css.map",

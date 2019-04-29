@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Helvetica, sans-serif;
-  background: linear-gradient(89deg, rgb(211, 209, 104) 0%, rgb(116, 94, 194) 100%);
+  background: linear-gradient(89deg, #5f2c82 0%, #49a09d 100%);
 }
 
 button {

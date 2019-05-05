@@ -1,4 +1,9 @@
 # Trollify v1.0.0
+
+A simple registration is required. Login and input a valid image URL (must contain a valid image file extension). The app will detect the faces in the picture and insert a trollface on top of them.
+
+This is a full stack app, using Node.js + Express.js and PostgreSQL for the back-end, ReactJS for the front-end.
+
 Using Clarifai API
 
 1. Clone this repo

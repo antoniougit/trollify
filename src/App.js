@@ -64,8 +64,9 @@ class App extends Component {
   }
 
   onButtonSubmit = () => {
-    const imgUrl = /(http[s]?:\/\/.*.(?:png|jpg|gif|svg|jpeg|webp))/i;
-    if (imgUrl.test(this.state.input)) {
+    // Image url validation. Not using it because of stupid google images links.
+    // const imgUrl = /(http[s]?:\/\/.*.(?:png|jpg|gif|svg|jpeg|webp))/i;
+    // if (imgUrl.test(this.state.input)) {
       this.setState({ imageUrl: this.state.input });
       fetch('https://trollify-server.herokuapp.com/imageurl', {
         method: 'post',
@@ -93,7 +94,7 @@ class App extends Component {
         this.displayFaceBox(this.calculateFaceLocation(response))
       })
       .catch(err => console.log(err));
-    }
+   // }
   };
 
   onRouteChange = (route) => {

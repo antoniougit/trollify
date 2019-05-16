@@ -64,7 +64,7 @@ class App extends Component {
   }
 
   onButtonSubmit = () => {
-    // Image url validation. Not using it because of stupid google images links.
+    // Image url validation. Commented out to allow greater flexibility for the user.
     // const imgUrl = /(http[s]?:\/\/.*.(?:png|jpg|gif|svg|jpeg|webp))/i;
     // if (imgUrl.test(this.state.input)) {
       this.setState({ imageUrl: this.state.input });

@@ -18,19 +18,6 @@ class SignIn extends React.Component {
     };
 
     onSubmitSignIn = () => {
-        // fetch('https://trollify-server.herokuapp.com/signin', {
-        //   method: 'post',
-        //   headers: {'Content-Type': 'application/json'},
-        //   body: JSON.stringify({
-        //     email: this.state.signInEmail,
-        //     password: this.state.signInPassword
-        //   })
-        // })
-        //   .then(response => response.json())
-        //   .then(user => {
-        //     if (user.id) {
-        //       this.props.loadUser(user)
-        // Simulate a successful login, bypassing server response check
         const dummyUser = {
             id: '123',
             name: 'Default User',
@@ -39,8 +26,6 @@ class SignIn extends React.Component {
 
         this.props.loadUser(dummyUser);
         this.props.onRouteChange('home');
-        //   }
-        // })
     };
 
     render() {
